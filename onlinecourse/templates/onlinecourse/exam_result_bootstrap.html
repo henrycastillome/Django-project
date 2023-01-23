@@ -38,16 +38,17 @@
     </nav>
 
     <div class="container-fluid">
+        <!-- Display passed info -->
         {% if percentage >= 80 %}
         <div class="alert alert-success">
             <p><b>Congratulations,{{ user.first_name }} </b> you have have {{message}} the course with a score
                 {{percentage}}</p>
 
-            <!--HINT Display passed info -->
+
         </div>
         {% else %}
         <div class="alert alert-danger">
-            <!--HINT Display failed info -->
+            <!--Display failed info -->
             <p><b>Sorry, {{ user.first_name }} </b> you have have {{message}} the course with a score {{percentage}}/100
             </p>
 
@@ -79,17 +80,8 @@
                         {% endfor %}
 
                     {% endfor %}
-
                 </div>
-
-
-
-
-
-
             </div>
-
-
         </div>
         {% endfor %}
 
